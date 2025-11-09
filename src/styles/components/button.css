@@ -1,0 +1,62 @@
+.button-container {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: var(--primary-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.add-button {
+  margin-left: 5px;
+  background-color: rgb(78, 214, 78);
+}
+
+.delete-button {
+  background-color: rgb(215, 28, 28);
+}
+
+.move-button {
+  background-color: rgb(209, 209, 12);
+}
+
+.delete-button,
+.move-button {
+  font-size: 1.4rem;
+  margin-left: 5px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  .add-button:hover {
+    background-color: darkgreen;
+  }
+
+  .delete-button:hover {
+    background-color: darkred;
+  }
+
+  .move-button:hover {
+    background-color: rgb(164, 225, 72);
+  }
+}
+
+@media only screen and (max-width: 469px) {
+  .button-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .delete-button,
+  .move-button {
+    font-size: 0.7rem;
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,33 @@
+.page-footer {
+  flex-shrink: 0;
+
+  background-color: var(--background-color);
+
+  color: var(--primary-text-color);
+  font-weight: 500;
+  text-align: center;
+
+  /* responsive */
+  line-height: 2.4rem;
+  transition: background-color 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.page-footer-grid {
+  max-width: 120rem;
+
+  /* responsive */
+
+  padding: 3.2rem;
+}
+
+@media only screen and (max-width: 469px) {
+  .page-footer{
+    line-height: 0;
+  }
+  .page-footer-grid{
+    padding-top: 0;
+    padding-left:0;
+    padding-right:0;
+    padding-bottom:1rem;
+  }
+}

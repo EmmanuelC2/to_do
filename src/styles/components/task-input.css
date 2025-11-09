@@ -1,0 +1,21 @@
+.task-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+input[type="text"] {
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    color: black;
+}
+
+@media only screen and (max-width: 469px) {
+    input[type="text"] {
+        font-size:1rem;
+    }
+}
