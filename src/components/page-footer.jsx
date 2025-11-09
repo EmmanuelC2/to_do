@@ -7,6 +7,7 @@ function PageFooter({data}) {
         <footer className="page-footer">
             <div className="page-footer-grid">
                 <div className="page-footer-grid__info">
+                    {/* Footer hosts the theme toggle so it stays visible across pages. */}
                     <ToggleButton data={data} />
                 </div>
             </div>

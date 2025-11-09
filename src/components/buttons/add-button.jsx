@@ -1,5 +1,6 @@
 function AddButton({data}) {
 
+    // Mirror TaskInput so clicking the button and pressing Enter share the logic.
     function addTask() {
         if (data.newTask.trim() !== "") {
             data.setTasks(t => [data.newTask, ...t]);

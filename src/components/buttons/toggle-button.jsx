@@ -2,6 +2,7 @@ import { useState } from "react";
 
 function ToggleButton({data}) {
 
+    // Keep a human readable label so the checkbox communicates the next action.
     const [labelText, setLabelText] = useState(!data.isDark ? "Dark Mode" : "Light Mode");
 
     function changeLabelText(){
@@ -12,6 +13,7 @@ function ToggleButton({data}) {
         }
     }
 
+    // Flip the global theme flag and immediately sync the button label.
     function switchMode() {data.setIsDark(!data.isDark); changeLabelText();}
 
     return (

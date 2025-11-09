@@ -6,7 +6,7 @@ import TaskList from "../components/task-list";
 import useLocalStorage from "use-local-storage";
 
 function HomePage() {
-
+    // Persist both the task list and current theme so the UI restores after refresh.
     const [tasks, setTasks] = useLocalStorage("tasks", []);
     const [newTask, setNewTask] = useState("");
     const [isDark, setIsDark] = useLocalStorage("isDark", false);
@@ -21,13 +21,12 @@ function HomePage() {
     }
 
     return (
-
+        // Pass a single state bundle so layout and children stay in sync.
         <PageLayout data={pageState}>
             <GeneralBanner data={pageState}/>
             <TaskInput data={pageState} />
             <TaskList data={pageState}/>
         </PageLayout> 
-        
     );
 }
 

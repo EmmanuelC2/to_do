@@ -1,5 +1,6 @@
 function UpButton({data, index}) {
 
+    // Swap the clicked task with the one above it to move up the list.
     function moveTaskUp(index) {
         if (index > 0) {
             const updatedTasks = [...data.tasks];

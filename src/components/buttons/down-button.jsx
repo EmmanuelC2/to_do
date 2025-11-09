@@ -1,5 +1,6 @@
 function DownButton({data, index}) {
 
+    // Mirror move up behavior but guard against moving past the final index.
     function moveTaskDown(index) {
         if (index < data.tasks.length - 1) {
             const updatedTasks = [...data.tasks];
